@@ -1,0 +1,25 @@
+html {
+    background-color: #1D1D1B;
+    margin: 0;
+    padding: 0;
+
+    overflow: scroll;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+    overflow: scroll;
+}
+
+#master {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    flex-direction: column;
+
+    margin-top: 20vh;
+}

@@ -1,0 +1,84 @@
+.section {
+    display: flex;
+
+    margin-bottom: 35vh;
+    padding-top: 80px;
+    margin-top: -80px;
+}
+
+.right {
+    margin-left: 100px;
+}
+
+.card-number {
+    font: bold 120px Roboto Mono, monospace;
+    margin-bottom: -20px;
+    margin-left: -20px;
+
+    color: #5C5C5C;
+}
+
+.card-left {
+    margin-left: 100px;
+
+    width: 370px;
+    height: 455px;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 5px;
+    margin-right: 100px;
+}
+
+.card-right {
+    width: 370px;
+    height: 455px;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 5px;
+    margin-left: 86px;
+}
+
+.card-title {
+    font: bold 22px Montserrat, sans-serif;
+    padding-top: 54px;
+    padding-left: 17px;
+    padding-bottom: 15px;
+}
+
+.card-text {
+    font: 15px Open Sans, sans-serif;
+    width: 201px;
+    color: white;
+
+    margin-bottom: 15px;
+}
+
+.card-image {
+    width: 370px;
+    height: 360px;
+
+    object-fit: cover;
+
+    border-radius: 0 0 5px 5px;
+}
+
+.more-button {
+    height: 32px;
+    width: 93px;
+
+    font: bold 16px Montserrat, sans-serif;
+
+    border: none;
+
+    border-radius: 2px;
+
+    color: #5C5C5C;
+}

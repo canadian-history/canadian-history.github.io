@@ -1,0 +1,118 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Canadian History: A Review</title>
+        <meta name="description" content="Canadian History: A Review">
+
+
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/sections.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/overlay.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+
+        <script type="text/javascript" src="js/popup.js"></script>
+    </head>
+
+    <div id="header" class="header">
+        <a href="#master" class="title-header">Canadian History: A Review</a>
+        <div class="right-header">
+            <a href="#first">First</a>
+            <a href="#second">Second</a> 
+            <a href="#third">Third</a> 
+            <a href="#fourth">Fourth</a> 
+            <a href="#fifth">Fifth</a> 
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay-1">
+        <a href="javascript:void(0)" class="backbtn" onclick="closePopup(1)">&larr;</a>
+        <div class="event">
+            <div class="content">
+                <div class="content-title">Great Migration</div>
+                <div class="content-section">
+                    <div class="content-section-title">Summary</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel fringilla purus. Sed mauris arcu, placerat nec interdum in, maximus vitae dolor. Etiam egestas rhoncus lorem ut ultricies. Ut vel nisl risus. </div>
+                </div>
+                <div class="content-section">
+                    <div class="content-section-title">Impact</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel fringilla purus. Sed mauris arcu, placerat nec interdum in, maximus vitae dolor. </div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel fringilla purus. Sed mauris arcu, placerat nec interdum in, maximus vitae dolor. </div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel fringilla purus. Sed mauris arcu, placerat nec interdum in, maximus vitae dolor. </div>
+                </div>
+            </div>
+            <img src="1/great-migration.jpeg" alt="the great migration" class="overlay-image">
+        </div>
+
+        <div class="event">
+            <div class="content">
+                <div class="content-title">Great Migration</div>
+                <div class="content-section">
+                    <div class="content-section-title">Summary</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel fringilla purus. Sed mauris arcu, placerat nec interdum in, maximus vitae dolor. Etiam egestas rhoncus lorem ut ultricies. Ut vel nisl risus. </div>
+                </div>
+                <div class="content-section">
+                    <div class="content-section-title">Impact</div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel fringilla purus. Sed mauris arcu, placerat nec interdum in, maximus vitae dolor. </div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel fringilla purus. Sed mauris arcu, placerat nec interdum in, maximus vitae dolor. </div>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel fringilla purus. Sed mauris arcu, placerat nec interdum in, maximus vitae dolor. </div>
+                </div>
+            </div>
+            <img src="1/great-migration.jpeg" alt="the great migration" class="overlay-image">
+        </div>
+    </div>
+    
+    <div id="master">
+        <div class="section" id="first">
+            <div class="card-left">
+                <div class="card-title">The People of BNA</div>
+                <img src="1/great-migration.jpeg" class="card-image"></img>
+            </div>
+
+            <div class="text-right">
+                <div class="card-number">1</div>
+                <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim dui efficitur, gravida erat eu, pretium metus.</div>
+                <button type="button" class="more-button" onclick="openPopup(1)">More</button>
+            </div>
+        </div>
+
+        <div class="section right">
+            <div class="text-left">
+                <div class="card-number">1</div>
+                <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim dui efficitur, gravida erat eu, pretium metus.</div>
+                <button type="button" class="more-button">More</button>
+            </div>
+
+            <div class="card-right">
+                <div class="card-title">The People of BNA</div>
+                <img src="1/great-migration.jpeg" class="card-image"></img>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="card-left">
+                <div class="card-title">The People of BNA</div>
+                <img src="1/great-migration.jpeg" class="card-image"></img>
+            </div>
+
+            <div class="text-right">
+                <div class="card-number">1</div>
+                <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim dui efficitur, gravida erat eu, pretium metus.</div>
+                <button type="button" class="more-button">More</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
+    <script type="text/javascript" src="js/skrollr.menu.min.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init([smoothScrolling=true]);
+        skrollr.menu.init(s);
+    </script>
+</html>
