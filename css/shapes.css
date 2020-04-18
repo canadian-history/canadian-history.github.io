@@ -2,9 +2,6 @@
     --shape-color: #262626;
 }
 
-.shapes div {
-}
-
 .square {
     position: absolute;
     width: 75px;
