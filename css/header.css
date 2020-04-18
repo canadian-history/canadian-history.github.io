@@ -3,7 +3,8 @@
     width: 100vw;
     top: 0;
 
-    background-color: #1D1D1B;
+    background-color: rgb(29, 29, 27);
+    background-color: rgba(29, 29, 27, 0.9);
     border-bottom: 1px solid #707070;
     padding-top: 12px;
 
@@ -25,7 +26,7 @@
 
 .header .title-header {
     margin-left: 88px;
-    font-weight: bold;
+    font-weight: 800;
 }
 
 .header a {
@@ -33,5 +34,5 @@
     color: white;
     text-decoration: none;
 
-    font: 16px Open Sans, sans-serif;
+    font: 300 16px Open Sans, sans-serif;
 }

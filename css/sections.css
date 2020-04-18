@@ -6,6 +6,8 @@
     margin-top: -80px;
 
     overflow: hidden;
+
+    z-index: 8;
 }
 
 .right {
