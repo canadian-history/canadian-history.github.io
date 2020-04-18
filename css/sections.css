@@ -90,3 +90,34 @@
 
     color: #5C5C5C;
 }
+
+.more-button:hover {
+    background-color: #DCDCDD;
+}
+
+.more-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+}
+
+.more-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    
+    top: 0;
+    right: -20px;
+
+    transition: 0.5s;
+}
+
+.more-button:hover span {
+    padding-right: 15px;
+}
+
+.more-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}

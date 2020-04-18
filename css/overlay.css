@@ -2,13 +2,14 @@
     opacity: 0;
     z-index: -1;
     position: fixed;
-    width: 100vw;
+    width: 0vw;
+    left: 100vw;
 
     top: 0;
     bottom:0;
     overflow: scroll;
 
-    transition: 0.2s;
+    transition: 0.7s;
 }
 
 .overlay#overlay-1 {
