@@ -29,6 +29,22 @@
     position: fixed;
 
     transition: 0.7s;
+
+    -webkit-filter: brightness(100%);
+    -moz-filter: brightness(100%);
+    -o-filter: brightness(100%);
+    -ms-filter: brightness(100%);
+    filter: brightness(100%);
+}
+
+.backbtn:hover {
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+    -o-filter: brightness(50%);
+    -ms-filter: brightness(50%);
+    filter: brightness(50%);
+
+    transform: scale(1.1);
 }
 
 .event {
