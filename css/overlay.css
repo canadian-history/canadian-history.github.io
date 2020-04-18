@@ -6,7 +6,7 @@
 
     top: 0;
     bottom:0;
-    overflow: visible;
+    overflow: scroll;
 
     transition: width 0.7s;
 }
