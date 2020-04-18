@@ -80,7 +80,6 @@
 
 .more-button {
     height: 34px;
-    width: 93px;
 
     font: bold 16px Montserrat, sans-serif;
 
@@ -89,6 +88,9 @@
     border-radius: 2px;
 
     color: #5C5C5C;
+    width: 90px;    
+
+    animation: 0.5s;
 }
 
 .more-button:hover {
