@@ -3,17 +3,22 @@ function sleep(ms) {
 }
 
 async function closePopup(id) {
-    document.getElementById("overlay-"+id).style.width = "0vw";
+    let overlay = document.getElementById("overlay-"+id);
+    document.getElementById("body").classList.remove("stop-scrolling");
+    overlay.style.width = "0vw";
     document.getElementById("overlay-button-"+id).style.opacity = "0";
     await sleep(700);
-    document.getElementById("overlay-"+id).style.zIndex = "-3";
+    overlay.style.zIndex = "-3";
 }
 
-function openPopup(id) {
-    document.getElementById("overlay-"+id).style.zIndex = "1000";
-    document.getElementById("overlay-"+id).style.width = "100vw";
-    document.getElementById("overlay-"+id).style.opacity = "1";
+async function openPopup(id) {
+    let overlay = document.getElementById("overlay-"+id);
+    overlay.style.zIndex = "1000";
+    overlay.style.width = "100vw";
+    overlay.style.opacity = "1";
     document.getElementById("overlay-button-"+id).style.opacity = "1";
+    await sleep(700);
+    document.getElementById("body").classList.add("stop-scrolling");
 }
 
 document.onkeydown = function(evt) {

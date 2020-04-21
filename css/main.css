@@ -45,3 +45,7 @@ body {
 
     margin-top: 10vh;
 }
+
+.stop-scrolling {
+    overflow: hidden;
+}
