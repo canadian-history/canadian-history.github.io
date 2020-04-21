@@ -2,8 +2,8 @@
     display: flex;
 
     margin-bottom: 35vh;
-    padding-top: 80px;
-    margin-top: -80px;
+    padding-top: 150px;
+    margin-top: -150px;
 
     z-index: 8;
 }
