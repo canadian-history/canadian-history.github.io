@@ -63,9 +63,22 @@
     width: 201px;
     color: white;
 
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 
     z-index: 10;
+}
+
+.card-text span::before {
+    content: "Rationale: ";
+}
+
+.card-text span {
+    display: block;
+    margin-top: 10px;
+}
+
+.card-text-right {
+    width: 225px;
 }
 
 .card-image {
@@ -103,7 +116,7 @@
     transition: 0.4s;
 }
 
-.more-button span:after {
+.more-button span::after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -118,7 +131,7 @@
     padding-right: 15px;
 }
 
-.more-button:hover span:after {
+.more-button:hover span::after {
     opacity: 1;
     right: 0;
 }

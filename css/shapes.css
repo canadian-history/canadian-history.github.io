@@ -69,6 +69,8 @@
     height: 0;
 
     color: var(--shape-color);
+
+    font: Arial, sans-serif;
 }
 
 .cross {

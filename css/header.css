@@ -11,6 +11,9 @@
     z-index: 99;
 
     position: fixed;
+    -webkit-backdrop-filter: blur(4px);
+    -moz-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
 }
 
 .header .right-header {
@@ -30,7 +33,7 @@
 }
 
 .header a {
-    flex: 0 0 100px;
+    flex: 0 0 80px;
     color: white;
     text-decoration: none;
 
