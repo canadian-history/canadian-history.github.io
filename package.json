@@ -1,0 +1,13 @@
+{
+  "name": "canadian-history",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "babel ./src/js --presets @babel/preset-env -d docs/js && rsync -av ./src/* ./docs/ --exclude js/ || true && for f in ./docs/* ; do\nminify \"$f\" > \"$f\"\ndone"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "minify": "^5.1.1"
+  }
+}
