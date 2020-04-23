@@ -17,6 +17,10 @@
     border-width: 1px;
 
     transition: opacity 0.5s;
+
+    max-height: 80%;
+    display: flex;
+    flex-direction: column;
 }
 
 .references-modal .close {
@@ -36,7 +40,31 @@
 
 .modal-content {
     font: 13px Open Sans, sans-serif;
+    overflow-y: scroll;
 }
+
+.modal-content div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.modal-content div a {
+    text-decoration: none;
+    color: #037bfc;
+    text-decoration: underline solid transparent;
+    transition: text-decoration 0.5s;
+}
+
+.modal-content div a:visited {
+    text-decoration: none;
+    color: #037bfc;
+}
+
+.modal-content div a:hover {
+    text-decoration: underline solid #037bfc;
+    color: #037bfc;
+}
+
 
 .modal-title {
     display:inline-block;
@@ -45,7 +73,7 @@
 
 .modal-cover {
     width: 100vw;
-    height: 100vh;
+    height: 550vh;
 
     display: fixed;
     position: absolute;
