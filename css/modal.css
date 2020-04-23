@@ -71,17 +71,15 @@
     font: bold 15px Montserrat, sans-serif;
 }
 
-.modal-cover {
+#cover {
     width: 100vw;
-    height: 550vh;
+    height: 100vh;
 
-    display: fixed;
-    position: absolute;
+    position: fixed;
+    top: 0px;
+    left: 0px;
 
     opacity: 0;
-
-    top: 0;
-    left: 0;
 
     transition: opacity 0.5s;
 
