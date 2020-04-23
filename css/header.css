@@ -16,7 +16,7 @@
     backdrop-filter: blur(4px);
 }
 
-.header .right-header {
+.right-header {
     float: right;
     display: flex;
     text-align: center;
@@ -33,6 +33,14 @@
 }
 
 .header a {
+    flex: 0 0 80px;
+    color: white;
+    text-decoration: none;
+
+    font: 300 16px Open Sans, sans-serif;
+}
+
+.right-header a {
     flex: 0 0 80px;
     color: white;
     text-decoration: none;

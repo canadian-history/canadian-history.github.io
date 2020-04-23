@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/overlay.css">
         <link rel="stylesheet" href="./css/shapes.css">
+        <link rel="stylesheet" href="./css/modal.css">
 
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet">
@@ -50,8 +51,32 @@
             </div>
         </div>
 
+        <div class="modal-cover" id="cover" onclick="closeModalReferences()"></div>
+
+        <div class="references-modal" id="references-modal-1">
+            <div class="modal-header">
+                <div class="modal-title">References</div>
+                <a href="javascript:void(0)" class="close" onclick="closeModalReferences()">&times;</a>
+            </div>
+            <div class="modal-content">
+                <div>https://www.thecanadianencyclopedia.ca/en/article/irish</div>
+                <div>https://www.thecanadianencyclopedia.ca/en/article/doukhobors</div>
+                <div>https://www.thecanadianencyclopedia.ca/en/article/immigration</div>
+                <div>https://www.thecanadianencyclopedia.ca/en/article/red-river-colony</div>
+                <div>https://en.wikipedia.org/wiki/Red_River_Colony</div>
+                <div>http://www.biographi.ca/en/theme_riviere_rouge.html</div>
+                <div>https://www.thecanadianencyclopedia.ca/en/article/underground-railroad</div>
+                <div>https://www.thecanadianencyclopedia.ca/en/article/red-river-colony</div>
+            </div>
+        </div>
+
         <div class="overlay" id="overlay-1">
-            <a href="javascript:void(0)" class="backbtn" id="overlay-button-1" onclick="closePopup(1)"><img src="assets/arrow-left.svg" alt="Back"></a>
+            <div id="section-1-header" class="header-overlay">
+                <a href="javascript:void(0)" class="backbtn" onclick="closePopup(1)"><img src="assets/arrow-left.svg" alt="Back"></a>
+                <div class="right-header">
+                    <a href="javascript:void(0)" onclick="openModalReferences()">References</a>
+                </div>
+            </div>
             <div class="event" id="section-1-1">
                 <div class="content">
                     <div class="content-title">Great Migration</div>
@@ -102,7 +127,12 @@
         </div>
 
         <div class="overlay" id="overlay-2">
-            <a href="javascript:void(0)" class="backbtn" id="overlay-button-2" onclick="closePopup(2)"><img src="assets/arrow-left.svg" alt="Back"></a>
+            <div id="section-2-header" class="header-overlay">
+                <a href="javascript:void(0)" class="backbtn" onclick="closePopup(2)"><img src="assets/arrow-left.svg" alt="Back"></a>
+                <div class="right-header">
+                    <a href="javascript:void(0)" onclick="openModalReferences()">References</a>
+                </div>
+            </div>
             <div class="event" id="section-2-1">
                 <div class="content">
                     <div class="content-title">Britain's Withdrawal of Troops</div>
@@ -182,8 +212,12 @@
         </div>
 
         <div class="overlay" id="overlay-3">
-            <a href="javascript:void(0)" class="backbtn" id="overlay-button-3" onclick="closePopup(3)"><img src="assets/arrow-left.svg" alt="Back"></a>
-
+            <div id="section-3-header" class="header-overlay">
+                <a href="javascript:void(0)" class="backbtn" onclick="closePopup(3)"><img src="assets/arrow-left.svg" alt="Back"></a>
+                <div class="right-header">
+                    <a href="javascript:void(0)" onclick="openModalReferences()">References</a>
+                </div>
+            </div>
             <div class="event" id="section-3-1">
                 <div class="content">
                     <div class="content-title">Charlottetown, Quebec and London Conferences</div>
@@ -219,7 +253,12 @@
         </div>
 
         <div class="overlay" id="overlay-4">
-            <a href="javascript:void(0)" class="backbtn" id="overlay-button-4" onclick="closePopup(4)"><img src="assets/arrow-left.svg" alt="Back"></a>
+            <div id="section-4-header" class="header-overlay">
+                <a href="javascript:void(0)" class="backbtn" onclick="closePopup(4)"><img src="assets/arrow-left.svg" alt="Back"></a>
+                <div class="right-header">
+                    <a href="javascript:void(0)" onclick="openModalReferences()">References</a>
+                </div>
+            </div>
 
             <div class="event" id="section-4-1">
                 <div class="content" style="padding-top: 80px;">
@@ -240,8 +279,12 @@
         </div>
 
         <div class="overlay" id="overlay-5">
-            <a href="javascript:void(0)" class="backbtn" id="overlay-button-5" onclick="closePopup(5)"><img src="assets/arrow-left.svg" alt="Back"></a>
-
+            <div id="section-5-header" class="header-overlay">
+                <a href="javascript:void(0)" class="backbtn" onclick="closePopup(5)"><img src="assets/arrow-left.svg" alt="Back"></a>
+                <div class="right-header">
+                    <a href="javascript:void(0)" onclick="openModalReferences()">References</a>
+                </div>
+            </div>
             <div class="event" id="section-5-1">
                 <div class="content">
                     <div class="content-title">Corn Laws</div>

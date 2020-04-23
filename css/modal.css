@@ -1,0 +1,61 @@
+.references-modal {
+    opacity: 0;
+    z-index: -1;
+    position: fixed;
+
+    width: 550px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    padding: 30px;
+
+    border-radius: 3px;
+    border-color: black;
+    border-width: 1px;
+
+    transition: opacity 0.5s;
+}
+
+.references-modal .close {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    float: right;
+
+    text-decoration: none;
+    
+    color: black;
+}
+
+.modal-header {
+    margin-bottom: 15px;
+}
+
+.modal-content {
+    font: 13px Open Sans, sans-serif;
+}
+
+.modal-title {
+    display:inline-block;
+    font: bold 15px Montserrat, sans-serif;
+}
+
+.modal-cover {
+    width: 100vw;
+    height: 100vh;
+
+    display: fixed;
+    position: absolute;
+
+    opacity: 0;
+
+    top: 0;
+    left: 0;
+
+    transition: opacity 0.5s;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
