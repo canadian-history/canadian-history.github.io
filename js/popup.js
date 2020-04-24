@@ -1,14 +1,16 @@
 "use strict";
 
 var curr_popup = null;
+var curr_modal = null;
 var in_modal_open = false;
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function openModalReferences() {
-    let obj = document.getElementById("references-modal-"+curr_popup);
+async function openModal(modaltype) {
+    curr_modal = modaltype;
+    let obj = document.getElementById(`${curr_modal}-modal-${curr_popup}`);
     obj.style.zIndex = "1002";
     obj.style.opacity = "1";
 
@@ -19,14 +21,15 @@ async function openModalReferences() {
     in_modal_open = true;
 }
 
-async function closeModalReferences() {
-    let obj = document.getElementById("references-modal-"+curr_popup);
+async function closeModal() {
+    let obj = document.getElementById(`${curr_modal}-modal-${curr_popup}`);
     obj.style.opacity = "0";
 
     let overlay = document.getElementById("cover");
     overlay.style.opacity = "0";
 
     in_modal_open = false;
+    curr_modal = null;
 
     await sleep(500);
     obj.style.zIndex = "-1";

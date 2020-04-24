@@ -1,4 +1,4 @@
-.references-modal {
+.modal {
     opacity: 0;
     z-index: -1;
     position: fixed;
@@ -23,11 +23,13 @@
     flex-direction: column;
 }
 
-.references-modal .close {
+.modal .close {
     background-color: transparent;
     border: none;
     font-size: 20px;
     float: right;
+    position: relative;
+    top: -4px;
 
     text-decoration: none;
     

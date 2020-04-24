@@ -33,17 +33,23 @@
 }
 
 .header a {
-    flex: 0 0 80px;
+    flex: 0 0;
     color: white;
     text-decoration: none;
+
+    margin-right: 15px;
+    margin-left: 15px;
 
     font: 300 16px Open Sans, sans-serif;
 }
 
 .right-header a {
-    flex: 0 0 80px;
+    flex: 0 0;
     color: white;
     text-decoration: none;
+
+    margin-right: 15px;
+    margin-left: 15px;
 
     font: 300 16px Open Sans, sans-serif;
 }
