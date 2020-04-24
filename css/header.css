@@ -32,7 +32,7 @@
     font-weight: 800;
 }
 
-.header a {
+.right-header a, .header a {
     flex: 0 0;
     color: white;
     text-decoration: none;
@@ -41,15 +41,9 @@
     margin-left: 15px;
 
     font: 300 16px Open Sans, sans-serif;
+    transition: 0.25s;
 }
 
-.right-header a {
-    flex: 0 0;
-    color: white;
-    text-decoration: none;
-
-    margin-right: 15px;
-    margin-left: 15px;
-
-    font: 300 16px Open Sans, sans-serif;
+.right-header a:hover, .header a:hover {
+    color: #c4c4c4;
 }
